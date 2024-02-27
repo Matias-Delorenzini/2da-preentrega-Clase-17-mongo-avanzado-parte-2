@@ -13,8 +13,6 @@ router.get('/', async (req, res) => {
             page = 1;
         }
 
-        console.log(page, typeof(page))
-
         let result;
 
         let filters = {}

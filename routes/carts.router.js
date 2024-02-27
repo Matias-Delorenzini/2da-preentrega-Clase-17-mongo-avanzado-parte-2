@@ -35,7 +35,6 @@ router.post('/', async (req, res) => {
 });
 
 router.delete("/clear/:cartId", async (req, res) => {
-    console.log("TOUCHED")
     const cartId = req.params.cartId
 
     const result = await CartManagerDAO.clearCart(cartId);

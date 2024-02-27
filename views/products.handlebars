@@ -54,8 +54,6 @@
         addBtn.addEventListener('click', async () => {
             const cartId = '65dd1855e6e9fa1e5b043821'; 
             const productId = addBtn.getAttribute('dataProductId');
-            console.log(productId)
-            console.log(typeof(productId))
 
             fetch(`/api/cart/addToCart?cartId=${cartId}&productId=${productId}`, {
                 method: 'POST',
